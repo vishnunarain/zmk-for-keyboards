@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check OS layer banks and shortcuts
+      - name: Check shared layout and persistent layer cycle
         run: python3 tests/check_keymap.py
   build:
     needs: keymap-checks
